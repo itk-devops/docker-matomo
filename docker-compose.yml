@@ -36,7 +36,7 @@ services:
       - .docker/data/matomo:/var/www/html
 
   nginx:
-    image: nginxinc/nginx-unprivileged:alpine
+    image: nginx/nginx-unprivileged:alpine
     networks:
       - app
       - frontend
